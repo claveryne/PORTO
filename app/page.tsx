@@ -117,8 +117,8 @@ export default function Home() {
 
           <div className="mt-12">
              <a 
-              href="/cv.pdf"
-              download="Claudia_Xaveryne_CV.pdf"
+              href="/ClaudiaFeLiviaXaveryne_CV.pdf"
+              download="ClaudiaFeLiviaXaveryne_CV.pdf"
               target="_blank"
               className="inline-block px-10 py-5 bg-foreground text-background font-semibold uppercase tracking-widest text-sm hover:bg-accent transition-colors shadow-lg"
             >

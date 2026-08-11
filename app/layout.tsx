@@ -14,7 +14,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portofolio Claudia Xaveryne",
   description: "Professional portfolio",
 };
 

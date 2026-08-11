@@ -115,7 +115,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12">
+          {/* <div className="mt-12">
              <a 
               href="/ClaudiaFeLiviaXaveryne_CV.pdf"
               download="ClaudiaFeLiviaXaveryne_CV.pdf"
@@ -124,7 +124,7 @@ export default function Home() {
             >
               Download CV
             </a>
-          </div>
+          </div> */}
         </section>
 
       </main>

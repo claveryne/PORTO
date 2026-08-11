@@ -8,7 +8,7 @@ export default function Home() {
         
         {/* Hero Section */}
         <section className="flex flex-col gap-6 text-center md:text-left pt-12 max-w-4xl">
-          <p className="uppercase tracking-widest text-sm text-accent font-semibold">Undergraduate Informatics Student</p>
+          <p className="uppercase tracking-widest text-sm text-accent font-semibold">Fresh Graduate Informatics Student</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground leading-tight">
             Claudia Xaveryne
           </h1>

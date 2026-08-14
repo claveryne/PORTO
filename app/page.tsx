@@ -109,9 +109,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full lg:w-2/5 p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-3xl md:text-4xl font-serif font-medium mb-6 group-hover:text-accent transition-colors">ReUseMart</h3>
+                <h3 className="text-3xl md:text-4xl font-serif font-medium mb-6 group-hover:text-accent transition-colors">E-Commerce Marketplace</h3>
                 <p className="text-lg text-foreground/70 mb-10 leading-relaxed">
-                  An e-commerce marketplace platform dedicated to buying and selling pre-owned and second-hand goods. Designed to provide a seamless, sustainable, and user-friendly shopping experience.
+                  A platform for buying and selling pre-owned and second-hand goods. Designed to provide a seamless, sustainable, and user-friendly shopping experience.
                 </p>
                 <div className="mt-auto">
                   <a 

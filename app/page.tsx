@@ -92,6 +92,39 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            {/* Project 3 */}
+            <div className="group bg-surface border border-border rounded-sm hover:border-accent transition-colors duration-300 flex flex-col lg:flex-row overflow-hidden">
+              <div className="w-full lg:w-3/5 p-6 md:p-10 border-b lg:border-b-0 lg:border-r border-border flex items-center bg-background/30">
+                <div className="w-full shadow-lg">
+                  <ImageCarousel 
+                    images={[
+                      // "/p3l-1.png",
+                      "/p3l-2.png",
+                      "/p3l-3.png",
+                      "/p3l-4.png"
+                    ]} 
+                    alt="ReUseMart Screenshot" 
+                  />
+                </div>
+              </div>
+              <div className="w-full lg:w-2/5 p-8 md:p-12 flex flex-col justify-center">
+                <h3 className="text-3xl md:text-4xl font-serif font-medium mb-6 group-hover:text-accent transition-colors">ReUseMart</h3>
+                <p className="text-lg text-foreground/70 mb-10 leading-relaxed">
+                  An e-commerce marketplace platform dedicated to buying and selling pre-owned and second-hand goods. Designed to provide a seamless, sustainable, and user-friendly shopping experience.
+                </p>
+                <div className="mt-auto">
+                  <a 
+                    href="https://github.com/unnamedboyy/ReuseMart.git" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="inline-flex items-center text-sm font-semibold uppercase tracking-widest text-accent hover:text-foreground transition-colors"
+                  >
+                    View on GitHub <span className="ml-3 text-lg">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -115,7 +148,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <div className="mt-12">
+          <div className="mt-12">
              <a 
               href="/ClaudiaFeLiviaXaveryne_CV.pdf"
               download="ClaudiaFeLiviaXaveryne_CV.pdf"
@@ -124,7 +157,7 @@ export default function Home() {
             >
               Download CV
             </a>
-          </div> */}
+          </div>
         </section>
 
       </main>

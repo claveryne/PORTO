@@ -32,9 +32,9 @@ export default function Home() {
               </div>
 
               <div className="p-4 bg-surface/60 border border-border/80 rounded-sm flex flex-col gap-3 hover:border-accent transition-colors">
-                <span className="text-sm font-serif font-semibold text-foreground/90">Frameworks & Mobile</span>
+                <span className="text-sm font-serif font-semibold text-foreground/90">Frameworks & Libraries</span>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "Next.js", "Laravel", "Flutter"].map((tech) => (
+                  {["Laravel", "React", "Next.js", "Bootstrap", "Tailwind CSS", "Laravel Socialite", "Laravel Mail"].map((tech) => (
                     <span key={tech} className="px-3 py-1 bg-background border border-border text-xs font-medium tracking-wider text-foreground/80 rounded-sm">
                       {tech}
                     </span>

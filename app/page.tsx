@@ -15,6 +15,45 @@ export default function Home() {
           <p className="max-w-2xl text-xl md:text-2xl leading-relaxed text-foreground/80 font-light mt-6">
             Developing end-to-end solutions with a user-first mindset. Love creating systems with interfaces that are easy to learn for everyday users.
           </p>
+
+          {/* Tech Stack / Technologies */}
+          <div className="mt-6 flex flex-col gap-4 text-left">
+            <p className="uppercase tracking-widest text-xs text-accent font-semibold">Technologies & Tools</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="p-4 bg-surface/60 border border-border/80 rounded-sm flex flex-col gap-3 hover:border-accent transition-colors">
+                <span className="text-sm font-serif font-semibold text-foreground/90">Languages & Fundamentals</span>
+                <div className="flex flex-wrap gap-2">
+                  {["HTML", "CSS", "JavaScript", "PHP", "Java", "C"].map((tech) => (
+                    <span key={tech} className="px-3 py-1 bg-background border border-border text-xs font-medium tracking-wider text-foreground/80 rounded-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-4 bg-surface/60 border border-border/80 rounded-sm flex flex-col gap-3 hover:border-accent transition-colors">
+                <span className="text-sm font-serif font-semibold text-foreground/90">Frameworks & Mobile</span>
+                <div className="flex flex-wrap gap-2">
+                  {["React", "Next.js", "Laravel", "Flutter"].map((tech) => (
+                    <span key={tech} className="px-3 py-1 bg-background border border-border text-xs font-medium tracking-wider text-foreground/80 rounded-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-4 bg-surface/60 border border-border/80 rounded-sm flex flex-col gap-3 hover:border-accent transition-colors sm:col-span-2 lg:col-span-1">
+                <span className="text-sm font-serif font-semibold text-foreground/90">Database & Architecture</span>
+                <div className="flex flex-wrap gap-2">
+                  {["MySQL", "RestAPI"].map((tech) => (
+                    <span key={tech} className="px-3 py-1 bg-background border border-border text-xs font-medium tracking-wider text-foreground/80 rounded-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Projects Section */}
@@ -99,7 +138,7 @@ export default function Home() {
                 <div className="w-full shadow-lg">
                   <ImageCarousel 
                     images={[
-                      // "/p3l-1.png",
+                      "/p3l-1.png",
                       "/p3l-2.png",
                       "/p3l-3.png",
                       "/p3l-4.png"

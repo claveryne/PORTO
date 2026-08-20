@@ -187,15 +187,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12">
-             <a 
-              href="/ClaudiaFeLiviaXaveryne_CV.pdf"
-              download="ClaudiaFeLiviaXaveryne_CV.pdf"
-              target="_blank"
-              className="inline-block px-10 py-5 bg-foreground text-background font-semibold uppercase tracking-widest text-sm hover:bg-accent transition-colors shadow-lg"
-            >
-              Download CV
-            </a>
+          <div className="mt-12 flex flex-row gap-8">
+            <div className="mt-12">
+              <a 
+                href="/ClaudiaFeLiviaXaveryne_CV_EN.pdf"
+                download="ClaudiaFeLiviaXaveryne_CV_EN.pdf"
+                target="_blank"
+                className="inline-block px-10 py-5 bg-foreground text-background font-semibold uppercase tracking-widest text-sm hover:bg-accent transition-colors shadow-lg"
+              >
+                Download CV
+              </a>
+            </div>
+
+            <div className="mt-12">
+              <a 
+                href="/ClaudiaFeLiviaXaveryne_CV_ID.pdf"
+                download="ClaudiaFeLiviaXaveryne_CV_ID.pdf"
+                target="_blank"
+                className="inline-block px-10 py-5 bg-foreground text-background font-semibold uppercase tracking-widest text-sm hover:bg-accent transition-colors shadow-lg"
+              >
+                Unduh CV
+              </a>
+            </div>
           </div>
         </section>
 

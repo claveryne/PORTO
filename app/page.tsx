@@ -23,7 +23,7 @@ export default function Home() {
               <div className="p-4 bg-surface/60 border border-border/80 rounded-sm flex flex-col gap-3 hover:border-accent transition-colors">
                 <span className="text-sm font-serif font-semibold text-foreground/90">Languages & Fundamentals</span>
                 <div className="flex flex-wrap gap-2">
-                  {["HTML", "CSS", "JavaScript", "PHP", "Java", "C"].map((tech) => (
+                  {["HTML", "CSS", "PHP", "JavaScript", "C", "Java"].map((tech) => (
                     <span key={tech} className="px-3 py-1 bg-background border border-border text-xs font-medium tracking-wider text-foreground/80 rounded-sm">
                       {tech}
                     </span>

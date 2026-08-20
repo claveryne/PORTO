@@ -187,7 +187,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12 flex flex-row gap-8">
+          <div className="flex flex-row gap-8">
             <div className="mt-12">
               <a 
                 href="/ClaudiaFeLiviaXaveryne_CV_EN.pdf"

@@ -188,7 +188,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row gap-8">
-            <div className="mt-12">
+            <div>
               <a 
                 href="/ClaudiaFeLiviaXaveryne_CV_EN.pdf"
                 download="ClaudiaFeLiviaXaveryne_CV_EN.pdf"
@@ -199,7 +199,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-12">
+            <div>
               <a 
                 href="/ClaudiaFeLiviaXaveryne_CV_ID.pdf"
                 download="ClaudiaFeLiviaXaveryne_CV_ID.pdf"

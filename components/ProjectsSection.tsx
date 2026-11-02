@@ -75,7 +75,7 @@ const PROJECTS: ProjectData[] = [
 
 export default function ProjectsSection() {
   return (
-    <section id="works" className="flex flex-col gap-10">
+    <section id="projects" className="flex flex-col gap-10">
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-6">
         <div>

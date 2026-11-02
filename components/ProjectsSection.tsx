@@ -79,7 +79,7 @@ export default function ProjectsSection() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-6">
         <div>
-          <p className="uppercase tracking-widest text-xs text-accent font-semibold mb-2">Portfolio</p>
+          <p className="uppercase tracking-widest text-xs text-accent font-semibold mb-2">Projects</p>
           <h2 className="text-4xl md:text-5xl font-serif font-semibold text-foreground">Selected Works</h2>
         </div>
       </div>

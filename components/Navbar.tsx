@@ -14,7 +14,7 @@ export default function Navbar() {
       setIsScrolled(currentScroll > 20);
 
       // Section spy
-      const sections = ["contact", "works", "experience", "skills", "about"];
+      const sections = ["contact", "projects", "experience", "skills", "about"];
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
         if (el) {
@@ -36,7 +36,7 @@ export default function Navbar() {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills & Stack" },
     { id: "experience", label: "Experience" },
-    { id: "works", label: "Selected Works" },
+    { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
 

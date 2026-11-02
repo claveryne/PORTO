@@ -68,10 +68,10 @@ export default function HeroInteractive() {
       {/* Interactive Actions CTA Bar */}
       <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
         <a
-          href="#works"
+          href="#projects"
           className="px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground text-background font-semibold uppercase tracking-widest text-xs rounded-sm hover:bg-accent transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center gap-3 group text-center"
         >
-          <span>Explore Selected Works</span>
+          <span>Explore Selected Projects</span>
           <span className="text-sm group-hover:translate-y-0.5 transition-transform">↓</span>
         </a>
 

@@ -61,7 +61,7 @@ export default function Navbar() {
             <span className="font-serif font-semibold text-foreground text-lg leading-tight tracking-tight group-hover:text-accent transition-colors">
               Claudia Xaveryne
             </span>
-            <span className="text-[11px] font-sans tracking-widest uppercase text-accent font-medium hidden sm:block">
+            <span className="text-[10px] sm:text-[11px] font-sans tracking-widest uppercase text-accent font-medium">
               Based in Yogyakarta
             </span>
           </div>
@@ -121,8 +121,11 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-surface border-b border-border px-6 py-6 flex flex-col gap-4 animate-in slide-in-from-top-2 duration-200">
           <div className="flex items-center gap-2 pb-2 border-b border-border text-xs font-medium text-foreground/80">
-            <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-            <span>Available for New Opportunities</span>
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+            </span>
+            <span>Available for Hire</span>
           </div>
           {navLinks.map((link) => (
             <a

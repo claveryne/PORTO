@@ -56,20 +56,20 @@ export default function HeroInteractive() {
       </div>
 
       {/* Main Title & Hero Pitch */}
-      <div className="flex flex-col gap-5 max-w-4xl">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground leading-[1.08] tracking-tight">
+      <div className="flex flex-col gap-4 sm:gap-5 max-w-4xl">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground leading-[1.1] sm:leading-[1.08] tracking-tight">
           Claudia Xaveryne
         </h1>
-        <p className="max-w-3xl text-xl md:text-2xl leading-relaxed text-foreground/80 font-light mt-2">
+        <p className="max-w-3xl text-base sm:text-xl md:text-2xl leading-relaxed text-foreground/80 font-light mt-1 sm:mt-2">
           Developing end-to-end solutions with a user-first mindset. Love creating systems with interfaces that are easy to learn for everyday users.
         </p>
       </div>
 
       {/* Interactive Actions CTA Bar */}
-      <div className="flex flex-wrap items-center gap-4 pt-2">
+      <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
         <a
           href="#works"
-          className="px-8 py-4 bg-foreground text-background font-semibold uppercase tracking-widest text-xs rounded-sm hover:bg-accent transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-3 group"
+          className="px-6 sm:px-8 py-3.5 sm:py-4 bg-foreground text-background font-semibold uppercase tracking-widest text-xs rounded-sm hover:bg-accent transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center gap-3 group text-center"
         >
           <span>Explore Selected Works</span>
           <span className="text-sm group-hover:translate-y-0.5 transition-transform">↓</span>
@@ -77,7 +77,7 @@ export default function HeroInteractive() {
 
         <button
           onClick={copyEmail}
-          className="px-6 py-4 bg-surface border border-border text-foreground font-semibold uppercase tracking-widest text-xs rounded-sm hover:border-accent hover:text-accent transition-all duration-300 flex items-center gap-2 group cursor-pointer"
+          className="px-5 sm:px-6 py-3.5 sm:py-4 bg-surface border border-border text-foreground font-semibold uppercase tracking-widest text-xs rounded-sm hover:border-accent hover:text-accent transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer text-center"
           title="Click to copy email address"
         >
           {copied ? (
@@ -100,7 +100,7 @@ export default function HeroInteractive() {
 
         <a
           href="#contact"
-          className="px-6 py-4 bg-background border border-border text-foreground/80 font-semibold uppercase tracking-widest text-xs rounded-sm hover:border-accent hover:text-foreground transition-all duration-300"
+          className="px-5 sm:px-6 py-3.5 sm:py-4 bg-background border border-border text-foreground/80 font-semibold uppercase tracking-widest text-xs rounded-sm hover:border-accent hover:text-foreground transition-all duration-300 text-center flex items-center justify-center"
         >
           View CV & Contacts
         </a>

@@ -70,10 +70,10 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
         {/* Prev Button */}
         <button
           onClick={prevImage}
-          className="absolute left-3 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background text-foreground p-2 rounded-sm opacity-0 group-hover/carousel:opacity-100 transition-all duration-200 hover:scale-105 shadow-md focus:outline-none cursor-pointer"
+          className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background text-foreground p-1.5 sm:p-2 rounded-sm opacity-85 sm:opacity-0 sm:group-hover/carousel:opacity-100 transition-all duration-200 hover:scale-105 shadow-md focus:outline-none cursor-pointer"
           aria-label="Previous image"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="m15 18-6-6 6-6" />
           </svg>
         </button>
@@ -81,10 +81,10 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
         {/* Next Button */}
         <button
           onClick={nextImage}
-          className="absolute right-3 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background text-foreground p-2 rounded-sm opacity-0 group-hover/carousel:opacity-100 transition-all duration-200 hover:scale-105 shadow-md focus:outline-none cursor-pointer"
+          className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 bg-background/90 hover:bg-background text-foreground p-1.5 sm:p-2 rounded-sm opacity-85 sm:opacity-0 sm:group-hover/carousel:opacity-100 transition-all duration-200 hover:scale-105 shadow-md focus:outline-none cursor-pointer"
           aria-label="Next image"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="m9 18 6-6-6-6" />
           </svg>
         </button>

@@ -55,29 +55,29 @@ export default function ContactInteractive() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         
         {/* Left Column: Direct Contact Card */}
-        <div className="p-6 md:p-8 bg-surface/70 border border-border rounded-sm flex flex-col justify-between gap-6 shadow-xs">
+        <div className="p-5 sm:p-6 md:p-8 bg-surface/70 border border-border rounded-sm flex flex-col justify-between gap-6 shadow-xs">
           <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold uppercase tracking-widest text-accent">Direct Contact</span>
             </div>
             <div>
-              <h3 className="text-2xl font-serif font-medium text-foreground mb-1">
+              <h3 className="text-xl sm:text-2xl font-serif font-medium text-foreground mb-1">
                 Start a Conversation
               </h3>
-              <p className="text-sm text-foreground/75 leading-relaxed font-light">
+              <p className="text-xs sm:text-sm text-foreground/75 leading-relaxed font-light">
                 Feel free to reach out directly via email for inquiries, collaborations, or job opportunities.
               </p>
             </div>
 
-            <div className="p-4 bg-background border border-border rounded-sm flex flex-col gap-1 mt-2">
-              <span className="text-[11px] uppercase tracking-wider text-foreground/60 font-semibold">Email Address</span>
-              <span className="font-serif text-lg md:text-xl font-bold text-foreground break-all">
+            <div className="p-3.5 sm:p-4 bg-background border border-border rounded-sm flex flex-col gap-1 mt-2">
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-foreground/60 font-semibold">Email Address</span>
+              <span className="font-serif text-base sm:text-lg md:text-xl font-bold text-foreground break-all">
                 claveryne@gmail.com
               </span>
             </div>
           </div>
           
-          <div className="flex items-center gap-3 pt-4 border-t border-border/60">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4 border-t border-border/60">
             <button
               onClick={copyEmail}
               className="flex-1 py-3 px-4 bg-background border border-border text-xs uppercase tracking-wider font-semibold rounded-sm hover:border-accent hover:text-accent transition-all cursor-pointer flex items-center justify-center gap-2"
@@ -105,39 +105,39 @@ export default function ContactInteractive() {
         </div>
 
         {/* Right Column: Curriculum Vitae Download Cards */}
-        <div className="p-6 md:p-8 bg-surface/70 border border-border rounded-sm flex flex-col justify-between gap-6 shadow-xs">
+        <div className="p-5 sm:p-6 md:p-8 bg-surface/70 border border-border rounded-sm flex flex-col justify-between gap-6 shadow-xs">
           <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold uppercase tracking-widest text-accent">Curriculum Vitae</span>
             </div>
             <div>
-              <h3 className="text-2xl font-serif font-medium text-foreground mb-1">
+              <h3 className="text-xl sm:text-2xl font-serif font-medium text-foreground mb-1">
                 Resume & Experience
               </h3>
-              <p className="text-sm text-foreground/75 leading-relaxed font-light">
+              <p className="text-xs sm:text-sm text-foreground/75 leading-relaxed font-light">
                 Download or preview my updated curriculum vitae in English or Indonesian.
               </p>
             </div>
 
             <div className="flex flex-col gap-3 mt-2">
               {/* English CV */}
-              <div className="p-3.5 bg-background border border-border hover:border-accent rounded-sm transition-colors flex items-center justify-between gap-3">
-                <div className="flex items-center gap-3">
+              <div className="p-3.5 bg-background border border-border hover:border-accent rounded-sm transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-3 min-w-0">
                   <div className="w-8 h-8 rounded-xs bg-surface border border-border flex items-center justify-center text-accent font-bold text-xs shrink-0">
                     EN
                   </div>
                   <div className="flex flex-col min-w-0">
                     <span className="text-xs font-semibold text-foreground truncate">CV English</span>
-                    <span className="text-[10px] text-foreground/50 truncate">ClaudiaFeLiviaXaveryne_CV_EN.pdf • 1.3 MB</span>
+                    <span className="text-[10px] text-foreground/50 truncate">PDF • 1.3 MB</span>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 shrink-0">
+                <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
                   <a
                     href="/ClaudiaFeLiviaXaveryne_CV_EN.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="p-1.5 text-foreground/60 hover:text-accent transition-colors text-xs"
+                    className="px-2.5 py-1.5 text-foreground/70 hover:text-accent border border-border/60 hover:border-accent rounded-xs transition-colors text-xs"
                     title="View in new tab"
                   >
                     View ↗
@@ -145,7 +145,7 @@ export default function ContactInteractive() {
                   <a
                     href="/ClaudiaFeLiviaXaveryne_CV_EN.pdf"
                     download="ClaudiaFeLiviaXaveryne_CV_EN.pdf"
-                    className="px-3 py-1.5 bg-foreground text-background text-[11px] uppercase tracking-wider font-semibold rounded-xs hover:bg-accent transition-colors"
+                    className="px-3 py-1.5 bg-foreground text-background text-[11px] uppercase tracking-wider font-semibold rounded-xs hover:bg-accent transition-colors text-center"
                   >
                     Download
                   </a>
@@ -153,23 +153,23 @@ export default function ContactInteractive() {
               </div>
 
               {/* Indonesian CV */}
-              <div className="p-3.5 bg-background border border-border hover:border-accent rounded-sm transition-colors flex items-center justify-between gap-3">
-                <div className="flex items-center gap-3">
+              <div className="p-3.5 bg-background border border-border hover:border-accent rounded-sm transition-colors flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-3 min-w-0">
                   <div className="w-8 h-8 rounded-xs bg-surface border border-border flex items-center justify-center text-accent font-bold text-xs shrink-0">
                     ID
                   </div>
                   <div className="flex flex-col min-w-0">
                     <span className="text-xs font-semibold text-foreground truncate">CV Bahasa Indonesia</span>
-                    <span className="text-[10px] text-foreground/50 truncate">ClaudiaFeLiviaXaveryne_CV_ID.pdf • 1.3 MB</span>
+                    <span className="text-[10px] text-foreground/50 truncate">PDF • 1.3 MB</span>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 shrink-0">
+                <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
                   <a
                     href="/ClaudiaFeLiviaXaveryne_CV_ID.pdf"
                     target="_blank"
                     rel="noreferrer"
-                    className="p-1.5 text-foreground/60 hover:text-accent transition-colors text-xs"
+                    className="px-2.5 py-1.5 text-foreground/70 hover:text-accent border border-border/60 hover:border-accent rounded-xs transition-colors text-xs"
                     title="Lihat di tab baru"
                   >
                     Lihat ↗
@@ -177,7 +177,7 @@ export default function ContactInteractive() {
                   <a
                     href="/ClaudiaFeLiviaXaveryne_CV_ID.pdf"
                     download="ClaudiaFeLiviaXaveryne_CV_ID.pdf"
-                    className="px-3 py-1.5 bg-foreground text-background text-[11px] uppercase tracking-wider font-semibold rounded-xs hover:bg-accent transition-colors"
+                    className="px-3 py-1.5 bg-foreground text-background text-[11px] uppercase tracking-wider font-semibold rounded-xs hover:bg-accent transition-colors text-center"
                   >
                     Unduh
                   </a>

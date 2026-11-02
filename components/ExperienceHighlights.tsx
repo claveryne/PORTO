@@ -61,13 +61,13 @@ export default function ExperienceHighlights() {
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className="p-6 md:p-8 bg-surface/50 hover:bg-surface border border-border/80 hover:border-accent rounded-sm transition-all duration-300 flex flex-col gap-4 group shadow-xs"
+            className="p-5 sm:p-6 md:p-8 bg-surface/50 hover:bg-surface border border-border/80 hover:border-accent rounded-sm transition-all duration-300 flex flex-col gap-4 group shadow-xs"
           >
             {/* Header: Role, Badges, Company, Period */}
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 pb-4 border-b border-border/60">
               <div className="flex flex-col gap-1.5">
                 <div className="flex items-center gap-2.5 flex-wrap">
-                  <h3 className="text-xl md:text-2xl font-serif font-bold text-foreground group-hover:text-accent transition-colors">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-foreground group-hover:text-accent transition-colors">
                     {exp.role}
                   </h3>
                   <span className="text-[10px] font-sans tracking-widest uppercase text-accent px-2 py-0.5 bg-background border border-border rounded-xs font-semibold">

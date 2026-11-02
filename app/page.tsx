@@ -14,7 +14,7 @@ export default function Home() {
         <Navbar />
 
         {/* Main Content Area */}
-        <main className="w-full max-w-[1440px] px-6 md:px-12 lg:px-24 py-12 md:py-16 flex flex-col gap-24 md:gap-32">
+        <main className="w-full max-w-[1440px] px-4 sm:px-8 md:px-12 lg:px-24 py-8 sm:py-12 md:py-16 flex flex-col gap-16 sm:gap-24 md:gap-32">
           {/* Interactive Hero with Mouse Glow & Value Metrics */}
           <HeroInteractive />
 
@@ -33,7 +33,7 @@ export default function Home() {
 
         {/* Elegant Footer */}
         <footer className="w-full border-t border-border/80 bg-surface/50 py-10 mt-auto">
-          <div className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground/65">
+          <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 lg:px-24 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-foreground/65">
             <div className="flex items-center gap-2">
               <span className="font-serif font-bold text-accent">CX</span>
               <span>•</span>

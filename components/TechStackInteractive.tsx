@@ -14,22 +14,22 @@ const ALL_SKILLS: SkillItem[] = [
   { name: "HTML", category: "Languages & Fundamentals", projects: ["Building Reservation", "Asset Loaning", "E-Commerce"], note: "Semantic structure & accessibility" },
   { name: "CSS", category: "Languages & Fundamentals", projects: ["Building Reservation", "Asset Loaning", "E-Commerce"], note: "Responsive styling & layouts" },
   { name: "PHP", category: "Languages & Fundamentals", projects: ["Building Reservation", "Asset Loaning", "E-Commerce"], note: "Backend services & OOP business logic" },
-  { name: "JavaScript", category: "Languages & Fundamentals", projects: ["E-Commerce Marketplace", "Portfolio"], note: "Dynamic DOM interactions & asynchronous data fetching" },
+  { name: "JavaScript", category: "Languages & Fundamentals", projects: ["Building Reservation", "Asset Loaning", "E-Commerce", "Portfolio"], note: "Dynamic DOM interactions & asynchronous data fetching" },
   { name: "C", category: "Languages & Fundamentals", projects: ["Academic Algorithms"], note: "Memory management & algorithmic foundations" },
   { name: "Java", category: "Languages & Fundamentals", projects: ["Academic Software Projects"], note: "Object-oriented architecture & design patterns" },
 
   // Frameworks & Libraries
   { name: "Laravel", category: "Frameworks & Libraries", projects: ["Building Reservation", "Asset Loaning", "E-Commerce"], note: "MVC architecture, Eloquent ORM, Blade, migrations & auth" },
-  { name: "React", category: "Frameworks & Libraries", projects: ["E-Commerce Marketplace", "Portfolio"], note: "Component-based architecture, state management & hooks" },
-  { name: "Next.js", category: "Frameworks & Libraries", projects: ["Portfolio Web App"], note: "Server-side rendering, App Router & modern web standards" },
+  { name: "React", category: "Frameworks & Libraries", projects: ["E-Commerce", "Portfolio"], note: "Component-based architecture, state management & hooks" },
+  { name: "Next.js", category: "Frameworks & Libraries", projects: ["Portfolio"], note: "Server-side rendering, App Router & modern web standards" },
   { name: "Bootstrap", category: "Frameworks & Libraries", projects: ["Building Reservation", "Asset Loaning"], note: "Rapid responsive grid & enterprise dashboard UI" },
-  { name: "Tailwind CSS", category: "Frameworks & Libraries", projects: ["E-Commerce Marketplace", "Portfolio"], note: "Utility-first design systems & high customizability" },
+  { name: "Tailwind CSS", category: "Frameworks & Libraries", projects: ["E-Commerce", "Portfolio"], note: "Utility-first design systems & high customizability" },
   { name: "Laravel Socialite", category: "Frameworks & Libraries", projects: ["Authentication Module"], note: "OAuth third-party social logins" },
   { name: "Laravel Mail", category: "Frameworks & Libraries", projects: ["Building Reservation"], note: "Automated booking confirmations & operational alerts" },
 
   // Database & Architecture
   { name: "MySQL", category: "Database & Architecture", projects: ["Building Reservation", "Asset Loaning", "E-Commerce"], note: "Relational database schema, indexing, joins & foreign keys" },
-  { name: "RestAPI", category: "Database & Architecture", projects: ["Asset Loaning", "E-Commerce"], note: "JSON endpoints, HTTP methods, authentication & integration" },
+  { name: "RestAPI", category: "Database & Architecture", projects: ["Building Reservation", "E-Commerce"], note: "JSON endpoints, HTTP methods, authentication & integration" },
 ];
 
 export default function TechStackInteractive() {
@@ -79,11 +79,10 @@ export default function TechStackInteractive() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm transition-all cursor-pointer ${
-                selectedCategory === cat
+              className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm transition-all cursor-pointer ${selectedCategory === cat
                   ? "bg-foreground text-background shadow-xs"
                   : "bg-background border border-border/80 text-foreground/70 hover:text-accent hover:border-accent"
-              }`}
+                }`}
             >
               {cat === "Languages & Fundamentals" ? "Languages" : cat === "Frameworks & Libraries" ? "Frameworks" : cat === "Database & Architecture" ? "Database" : "All Stack"}
             </button>

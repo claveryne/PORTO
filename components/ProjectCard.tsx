@@ -32,7 +32,7 @@ export default function ProjectCard({ project }: { project: ProjectData }) {
   return (
     <article className="group bg-surface/80 border border-border rounded-sm hover:border-accent transition-all duration-300 flex flex-col lg:flex-row overflow-hidden shadow-xs hover:shadow-md">
       {/* Visual / Screenshot Carousel Half */}
-      <div className="w-full lg:w-3/5 p-5 md:p-8 border-b lg:border-b-0 lg:border-r border-border flex flex-col justify-center bg-background/40">
+      <div className="w-full lg:w-3/5 p-4 sm:p-5 md:p-8 border-b lg:border-b-0 lg:border-r border-border flex flex-col justify-center bg-background/40">
         <ImageCarousel 
           images={project.images} 
           alt={`${project.title} Screenshot`} 
@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: { project: ProjectData }) {
       </div>
 
       {/* Interactive Information & Tabs Half */}
-      <div className="w-full lg:w-2/5 p-6 md:p-10 flex flex-col justify-between">
+      <div className="w-full lg:w-2/5 p-5 sm:p-6 md:p-10 flex flex-col justify-between">
         <div>
           {/* Header & Category Badge */}
           <div className="flex items-center justify-between gap-2 mb-3">
@@ -52,7 +52,7 @@ export default function ProjectCard({ project }: { project: ProjectData }) {
             </span>
           </div>
 
-          <h3 className="text-2xl md:text-3xl font-serif font-semibold text-foreground group-hover:text-accent transition-colors mb-2">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-semibold text-foreground group-hover:text-accent transition-colors mb-2">
             {project.title}
           </h3>
           <p className="text-xs text-accent font-medium tracking-wide uppercase mb-6">
@@ -60,10 +60,10 @@ export default function ProjectCard({ project }: { project: ProjectData }) {
           </p>
 
           {/* Interactive Navigation Tabs inside Card */}
-          <div className="flex border-b border-border mb-6">
+          <div className="flex border-b border-border mb-6 overflow-x-auto gap-1">
             <button
               onClick={() => setActiveTab("overview")}
-              className={`pb-2.5 px-3 text-xs uppercase tracking-wider font-semibold transition-all relative cursor-pointer ${
+              className={`pb-2.5 px-3 text-xs uppercase tracking-wider font-semibold transition-all relative cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === "overview"
                   ? "text-accent font-bold"
                   : "text-foreground/60 hover:text-foreground"
@@ -77,7 +77,7 @@ export default function ProjectCard({ project }: { project: ProjectData }) {
 
             <button
               onClick={() => setActiveTab("features")}
-              className={`pb-2.5 px-3 text-xs uppercase tracking-wider font-semibold transition-all relative cursor-pointer ${
+              className={`pb-2.5 px-3 text-xs uppercase tracking-wider font-semibold transition-all relative cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === "features"
                   ? "text-accent font-bold"
                   : "text-foreground/60 hover:text-foreground"
@@ -91,7 +91,7 @@ export default function ProjectCard({ project }: { project: ProjectData }) {
 
             <button
               onClick={() => setActiveTab("tech")}
-              className={`pb-2.5 px-3 text-xs uppercase tracking-wider font-semibold transition-all relative cursor-pointer ${
+              className={`pb-2.5 px-3 text-xs uppercase tracking-wider font-semibold transition-all relative cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === "tech"
                   ? "text-accent font-bold"
                   : "text-foreground/60 hover:text-foreground"
